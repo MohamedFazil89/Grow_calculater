@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(300deg, #000441, rgb(125, 194, 216), rgb(255, 255, 255));
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+.animate__bounce{
+    display: flex;
+    justify-content: flex-start;
+    color:white;
+    text-shadow: 0px 0px 20px black;
+    cursor: pointer;
+}
+.boder-box{
+    border: 0.38rem solid white;
+    padding: 0.9rem;
+    box-shadow: 0px 0px 20px blue,
+                0px 0px 30px rgb(0, 132, 255),
+                0px 0px 40px rgb(83, 0, 128),
+                0px 0px 40px rgb(255, 255, 255);
+}
+
+.btn:hover{
+    background-color: rgb(72, 161, 191);
+}
+
+
+
+
+
+.calculator-box{
+    background-color: black;
+    padding: 30px 30px 30px 30px;
+    
+
+}
+
+.input-group{
+  padding: 5px;
+}
+
+.input-group:focus{
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  transition: 1s;
+}
+
+.int-elements{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    color: white;
+}
+
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  

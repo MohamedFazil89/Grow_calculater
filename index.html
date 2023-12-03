@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <h1 class="animate__animated animate__bounce">CalculateEase</h1>
+
+    <div class="boder-box gradient-background">
+        <div class="calculator-box">
+            <input type="text" id="display" readonly class="input-group mb-3" >
+            <div class="int-elements">
+                <button class="btn btn-secondary" onclick="number(1);">1</button>
+                <button class="btn btn-secondary" onclick="number(2);">2</button>
+                 <button class="btn btn-secondary 3" onclick="number(3);">3</button>
+                <button class="btn btn-secondary +" onclick="number('+');">+</button>
+                <button class="btn btn-secondary 4" onclick="number(4);">4</button>
+                <button class="btn btn-secondary 5" onclick="number(5);">5</button>
+                <button class="btn btn-secondary 6" onclick="number(6);">6</button>
+                <button class="btn btn-secondary -" onclick="number('-')">-</button>
+                <button class="btn btn-secondary 7" onclick="number(7);">7</button>
+                <button class="btn btn-secondary 8" onclick="number(8);">8</button>
+                <button class="btn btn-secondary 9" onclick="number(9);">9</button>
+                <button class="btn btn-secondary x" onclick="number('*')">x</button>
+                <button class="btn btn-secondary 0" onclick="number(0);">0</button>
+                <button class="btn btn-secondary 8" onclick="number('.');">.</button>
+                <button class="btn btn-secondary C" onclick="deletes();">C</button>
+                <button class="btn btn-success" onclick="result();">=</button>
+                <button class="btn btn-secondary /" onclick="number('/');">/</button>
+                <button class="btn btn-dark"  onclick="clears();">AC</button>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
